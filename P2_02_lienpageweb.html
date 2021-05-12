@@ -17,92 +17,70 @@
 
     <div id="bloc_page">
         <header>
-            <div id="en_tête">
-		        <img id="logo" src="images/logo/Reservia.svg" alt="logo_reservia"/>
-
                 <nav>
-                     <ul>
-                        <a href="#hébergement"><div class="underline" id="nav_hebergement">
-                        <li> Hébergements</li>
-                         </div></a>
-                         <a href="#activités"> <div class="underline" id='nav_activités'>
-                         <li> Activités</li>
-                        </div></a>
-                        <a href="#"> <div class="underline" id="nav_inscription">
-                         <li> S'inscrire</li>
-                        </div></a>
-                     </ul>
+                    <img id="logo" src="images/logo/Reservia.svg" alt="logo_reservia"/>
+                        <div class="bar_navigation" id="bar_hébergement_lien">
+                            <div class="underline"></div>
+                                <a href="#hébergement">Hébergement</a></div>
+                            <div class="bar_navigation" id="bar_activités_lien">
+                            <div class="underline"></div>
+                                <a href="#activités">Activités</a></div>
+                            <div class="bar_navigation" id="bar_inscription_lien">
+                                <a href="#">S'inscrire</a></div>
                 </nav>
-            </div>
-
+            
+        </header>
         <!-- section_recherche-->
 
-            <div>
+            <main>
                 <div id="titre">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
+                
                 </div>
-
                 <div id="recherche">
                     <div id="fond_picto">
                         <img id="picto_gps" src="images/logo/map-marker-alt-solid.svg" alt="picto_localisation">
                     </div>
                         <input type="text" value="  Marseille, France" class="research-bar">
                         <button class="button-research" id="button-research">Rechercher</button>
+                        <button class="button-research-img"><img src="images/logo/search-solid.svg"  alt="logo-search"/></button>
                     
                 </div>
-            </div>
+            
+        
 
         <!-- section_filtres-->
 
-            <div id="filtres">
-                <ul>
-                    <li id="filtres_titre">Filtres</li>
-                <div class="filtres_border">
-                    <div class="filtres_img">
-                        <img src="images/logo/money-bill-wave-solid.svg" alt="picto_money">
-                    </div>
-                    <li >Economique</li>
-                </div>
+        <div id="filtres">
+                
+            <h2 id="filtres_titre">Filtres</h2>
+            <ul>
+                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/money-bill-wave-solid.svg" alt="picto_money"></span>Economique</li>
+                
 
-                <div class="filtres_border">
-                    <div class="filtres_img">
-                        <img  src="images/logo/child-solid.svg" alt="picto_child">
-                    </div>
-                    <li >Familial</li>
-                </div>
+                    <li class="filtres_border"><span class="filtres_img"><img  src="images/logo/child-solid.svg" alt="picto_child"></span>Familial</li>
+                
+                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/heart-solid.svg" alt="picto_heart"></span>Romantique</li>
 
-                <div class="filtres_border">
-                    <div class="filtres_img">
-                        <img src="images/logo/heart-solid.svg" alt="picto_heart">
-                    </div>
-                    <li>Romantique</li>
-                </div>
 
-                <div class="filtres_border">
-                    <div class="filtres_img">
-                        <img src="images/logo/dog-solid.svg" alt="picto_dog">
-                    </div>
-                    <li >Animaux autorisés</li>
-                </div>
+                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/dog-solid.svg" alt="picto_dog"></span>Animaux autorisés</li>
 
             </ul>
-                <div id="information">
-                    <div id="picto_info">
-                        <img  src="images/logo/info-solid.svg" alt="picto_info">
-                    </div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+            <div id="information">
+                <div id="picto_info">
+                    <img  src="images/logo/info-solid.svg" alt="picto_info">
                 </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+        </main>
             
-            </header>
 
         <!--section_hebergement-->
     <section id="section_1">
-                
-
-        <article id=marseille>
-                <h2 id="hébergement">Hébergement à Marseille</h2>
+        <h2 id="hébergement">Hébergement à Marseille</h2>
+                <article id="marseille">
                     <div id="article_marseille">
                         <a href="#">
                             <div class="hebergement_marseille">
@@ -235,7 +213,7 @@
                     </div>
                 </a> 
             </div>
-                <a href="#"><p id="afficher_plus">Afficher plus</p></a>
+                <p id="afficher_plus"><a href="#">Afficher plus</a></p>
         </article>
                 
 
@@ -315,8 +293,9 @@
         </aside>
     </section>
 
+
         <!-- Section_activités-->
-            <h2 id="activités" id="activités_titre">Activités à Marseille</h2>
+            <h2 id="activités_titre">Activités à Marseille</h2>
     <section class="section_2">
         <div class="englobe_activité" id="activitée-1">
             <a href="#">
@@ -389,23 +368,23 @@
                 <div class="bas-de-page">
                     <p>A propos</p>
                     <ul>
-                        <a href="#"><li>Fonctionnement du site</li></a>
-                        <a href="#"><li>Conditions générales de ventes</a></li>
-                        <a href="#"><li>Données et confidentialité</li></a>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de ventes</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div class="bas-de-page">
                     <p>Nos hébergements</p>
                     <ul>
-                        <a href="#"><li>Charte qualité</li></a>
-                        <a href="#"><li>Soumettre votre hôtel</li></a>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
                     </ul>
                 </div>
                 <div class="bas-de-page">
                     <p>Assistance</p>
                     <ul>
-                        <a href="#"><li>Centre d'aide</li></a>
-                        <a href="#"><li>Nous contacter</li></a>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </div>
 
