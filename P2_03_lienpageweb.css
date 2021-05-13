@@ -20,12 +20,12 @@ a{
 /*Haut de page*/
 
 header{
-    margin-top:-5px;
+    margin-top:-8px;
     
 }
 #logo{grid-area:logo;}
-#bar_hébergement_lien{grid-area:nav_hebergement;}
-#bar_activités_lien{grid-area:nav_activités;} 
+#bar_hebergement_lien{grid-area:nav_hebergement;}
+#bar_activites_lien{grid-area:nav_activites;} 
 #bar_inscription_lien{grid-area:nav_inscription;}
 
 nav{
@@ -34,7 +34,7 @@ nav{
     align-items: center;
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "logo . nav_hebergement nav_activités nav_inscription ";
+    grid-template-areas: "logo . nav_hebergement nav_activites nav_inscription ";
 }
 
 nav .bar_navigation{
@@ -52,11 +52,11 @@ nav .underline{
     background: white;
     
 }
-nav #bar_hébergement_lien:hover > .underline {
+nav #bar_hebergement_lien:hover > .underline {
     background: #0065fc;
   }
   
-nav #bar_activités_lien:hover > .underline {
+nav #bar_activites_lien:hover > .underline {
     background: #0065fc
   }
 nav a:hover{
@@ -85,8 +85,7 @@ nav a{
 #recherche{
     display: inline-flex;
     flex-direction: row;
-    
-    
+    width:100%;
 }
 
 #fond_picto{
@@ -147,28 +146,23 @@ nav a{
     margin-top:25px;
     display:flex;
     align-items: center;
-    gap:30px;
-
+    gap:20px;
 }
 
 #filtres ul{
     list-style-type: none;
     display:flex;
-    align-items: center;
     width:100%;
-    padding-left:0;
-    margin-left:-15px;
     gap:20px;
-   
-    
+    margin-left:-40px
 }
 #filtres li{
     font-size: 1.2em;
     font-weight:700;
     display:flex;
     align-items: center;
-    margin:20px;
-    gap:15px;
+    padding-right:10px;
+    gap:10px;
     
     
 }
@@ -214,6 +208,7 @@ nav a{
 #picto_info{
     border: 1px solid #DCDCDC;
     display:flex;
+    align-items: center;
     justify-content: center;
     width:24px;
     height:24px;
@@ -221,8 +216,8 @@ nav a{
     
 }
 #picto_info img{
-    width:5px;
-    heught:5px;
+    width:15px;
+    height:15px;
 }
 
 #information p{
@@ -254,7 +249,6 @@ aside{grid-area:populaires}
 
 #section_1{
     width:auto;
-    margin-bottom:60px;
     display:grid;
     justify-content: space-between;
     grid-template-rows: 1fr;
@@ -423,9 +417,10 @@ aside{grid-area:populaires}
 
 /* Section Activitées*/
 
-#activités_titre{
+#activites_titre{
     font-size: 1.3em;
     padding-left:10px;
+    margin-top:-40px;
 }
 
 .section_2 a{
@@ -433,38 +428,38 @@ aside{grid-area:populaires}
     color:black;
 }
 
-.section_2  .englobe_activité:hover{
+.section_2  .englobe_activite:hover{
     cursor: pointer;
     transform: scale(1.03);
     transition: ease 0.4s;
 }
 
-#activitée-1{grid-area: activitée_1;}
-#activitée-2{grid-area: activitée_2;}
-#activitée-3{grid-area: activitée_3;}
-#activitée-4{grid-area: activitée_4;}
-#activitée-5{grid-area: activitée_5;}
-#activitée-6{grid-area: activitée_6;}
+#activitee-1{grid-area: activitee_1;}
+#activitee-2{grid-area: activitee_2;}
+#activitee-3{grid-area: activitee_3;}
+#activitee-4{grid-area: activitee_4;}
+#activitee-5{grid-area: activitee_5;}
+#activitee-6{grid-area: activitee_6;}
 
 
 .section_2{
     height: 430px;
-    margin-bottom: 60px;
+    margin-bottom:60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
     grid-gap: 40px;
     grid-template-areas:
-        "activitée_1 activitée_2 activitée_4 activitée_5"
-        "activitée_1 activitée_2 activitée_4 activitée_5"
-        "activitée_1 activitée_2 activitée_4 activitée_5"
-        "activitée_1 activitée_3 activitée_4 activitée_6"
-        "activitée_1 activitée_3 activitée_4 activitée_6"
-        "activitée_1 activitée_3 activitée_4 activitée_6";
+        "activitee_1 activitee_2 activitee_4 activitee_5"
+        "activitee_1 activitee_2 activitee_4 activitee_5"
+        "activitee_1 activitee_2 activitee_4 activitee_5"
+        "activitee_1 activitee_3 activitee_4 activitee_6"
+        "activitee_1 activitee_3 activitee_4 activitee_6"
+        "activitee_1 activitee_3 activitee_4 activitee_6";
 }
 
 
- .section_2 .englobe_activité{
+ .section_2 .englobe_activite{
     position:relative;
     width: 100%;
     height: 100%;
@@ -473,7 +468,7 @@ aside{grid-area:populaires}
 
 }
 
-.section_2 .englobe_activité h3{
+.section_2 .englobe_activite h3{
     position:absolute;
     width: 95%;
     background-color: white;
@@ -484,14 +479,14 @@ aside{grid-area:populaires}
     font-size: 0.9em
 }
 
-.englobe_activité img{
+.englobe_activite img{
     object-fit: cover;
     border-radius: 20px;
     width: 100%;
     height: 100%;
     margin: 0;
 }
-.activités_img{
+.activites_img{
     height:100%;
     margin:0;
 }
@@ -542,6 +537,13 @@ footer a:hover{
         margin-right:30px;
     }
     
+    #filtres{
+        margin-top:25px;
+        display:flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap:0px;
+    }
     #filtres ul{
         flex-wrap: wrap;
         
@@ -622,20 +624,17 @@ footer a:hover{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas:"activitée_1 activitée_2  activitée_3"
-                            "activitée_4 activitée_5 activitée_6";
+        grid-template-areas:"activitee_1 activitee_2  activitee_3"
+                            "activitee_4 activitee_5 activitee_6";
     }
     
-    .section_2 .englobe_activité{
+    .section_2 .englobe_activite{
         height:350px;
     }
     
 }
 
 @media screen and (max-width:1000px){
-    #filtres ul{
-        margin-left:1px;
-    }
 
     #bloc_pages{
         width:auto;
@@ -644,7 +643,7 @@ footer a:hover{
     }
     #filtres li{
         font-size:1em;
-        margin:10px;
+        margin-top:-10px;
     }
     #filtres{
         margin-top:25px;
@@ -752,9 +751,9 @@ footer a:hover{
         display:grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:"activitée_1 activitée_2" 
-                            "activitée_3 activitée_4"
-                            "activitée_5 activitée_6";                   
+        grid-template-areas:"activitee_1 activitee_2" 
+                            "activitee_3 activitee_4"
+                            "activitee_5 activitee_6";                   
     }
 
 }
@@ -764,9 +763,7 @@ footer a:hover{
     main{
         margin-left:15px;
     }
-    #filtres ul{
-        margin-left:1px;
-    }
+    
     #bloc_page{
         margin:0;
     }
@@ -782,10 +779,6 @@ footer a:hover{
         background-color: white;
         
     }
-    #section_1 aside{
-        border-radius:0px;
-    }
-
     #article_marseille{
         height:100%;
         display:grid;
@@ -798,15 +791,15 @@ footer a:hover{
         display:grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-        grid-template-areas:"activitée_1" 
-                            "activitée_2" 
-                            "activitée_3" 
-                            "activitée_4"
-                            "activitée_5"
-                            "activitée_6";                   
+        grid-template-areas:"activitee_1" 
+                            "activitee_2" 
+                            "activitee_3" 
+                            "activitee_4"
+                            "activitee_5"
+                            "activitee_6";                   
     }
 
-     .section_2 .englobe_activité{
+     .section_2 .englobe_activite{
         width:96%;
         margin:auto;
         background-color:white;
@@ -814,20 +807,20 @@ footer a:hover{
         height:180px;
         box-shadow: 0px 0px 6px 0px grey;
     }
-    .englobe_activité h3{
+    .englobe_activite h3{
 
         border-radius:0;
         padding:0;
         font-size: 0.9em
     }
-    .englobe_activité img{
+    .englobe_activite img{
         width: 100%;
         height: 85%;
         background-size: 100% 100%;
         border-radius: 20px 20px 0 0;
         object-fit:cover;
     }
-    .activités_img{
+    .activites_img{
         height:100%;
     }
 
@@ -845,6 +838,14 @@ footer a:hover{
 }
 
 @media screen and (max-width:480px){
+    #bloc_page{
+        padding:0;
+        margin:0;
+    }
+    
+    nav img{
+        margin-left:15px;
+    }
     nav{
         display: grid;
         justify-content: center;
@@ -852,19 +853,29 @@ footer a:hover{
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "logo nav_inscription"
-                             " nav_hebergement nav_activités";
+                             " nav_hebergement nav_activites";
     }
     nav .bar_navigation{
         font-size:1em;
     }
-    nav #bar_hébergement_lien,nav #bar_activités_lien{
+    nav #bar_hebergement_lien,nav #bar_activites_lien{
         display:flex;
         flex-direction: column-reverse;
+    }
+    #section_1 aside,#article_marseille{
+        padding:10px;
+    }
+    nav .underline{
+        background-color:#F2F2F2;
+    }
+    .hebergement_marseille,.section_2 {
+        margin-left:10px;
+        margin-right:10px;
     }
 
     
     .img_populaire{
-        width:50%;    
+        width:35%;   
     }
     
    .img_aside{
@@ -874,6 +885,7 @@ footer a:hover{
     .bas-de-page{
         width:100%;
     }
+    
     .button-research{
         display:none;
     }
@@ -887,7 +899,6 @@ footer a:hover{
         width:47px;
         height:47px;
         font-weight: 500;
-        margin-left:-10px;
         cursor: pointer;
     }
     .button-research-img img{
@@ -901,8 +912,44 @@ footer a:hover{
     main{
         margin-left:15px;
     }
-    #filtres ul{
-        margin-left:1px;
-    }
     
+    
+}
+
+@media screen and (max-width:390px){
+    .img_populaire{
+        margin-right:15px;
+    }
+    #picto_info{
+        width:25px;
+        height:20px;
+        border-radius:50px;
+    }
+    #picto_info img{
+        width:10px;
+        height:10px;
+    }
+
+    #recherche{
+        justify-content: center;
+     }
+
+    #fond_picto{
+        height:51px;
+    }
+  
+    .research-bar{
+        height:47px;
+        width:220px;
+    }
+    .button-research-img{
+        width:50px;
+        height:50px;
+        margin-left:-10px;
+    }
+    .button-research-img img{
+        width:20px;
+        height:20px;
+    }
+
 }
