@@ -3,7 +3,11 @@
     
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="P2_03_lienpageweb.css" />
+        <script src="https://kit.fontawesome.com/6d9cb8bfdb.js" crossorigin="anonymous"></script>
+        
         <title>Reservia</title> 
      
        <!--Police--> 
@@ -21,10 +25,10 @@
                     <img id="logo" src="images/logo/Reservia.svg" alt="logo_reservia"/>
                         <div class="bar_navigation" id="bar_hebergement_lien">
                             <div class="underline"></div>
-                                <a href="#hébergement">Hébergement</a></div>
+                                <a href="#hebergement">Hébergement</a></div>
                             <div class="bar_navigation" id="bar_activites_lien">
                             <div class="underline"></div>
-                                <a href="#activités">Activités</a></div>
+                                <a href="#activites_titre">Activités</a></div>
                             <div class="bar_navigation" id="bar_inscription_lien">
                                 <a href="#">S'inscrire</a></div>
                 </nav>
@@ -40,11 +44,11 @@
                 </div>
                 <div id="recherche">
                     <div id="fond_picto">
-                        <img id="picto_gps" src="images/logo/map-marker-alt-solid.svg" alt="picto_localisation">
+                        <i class="fas fa-map-marker-alt" style="font-size: 18px; color:black"></i>
                     </div>
                         <input type="text" value="  Marseille, France" class="research-bar">
                         <button class="button-research" id="button-research">Rechercher</button>
-                        <button class="button-research-img"><img src="images/logo/search-solid.svg"  alt="logo-search"/></button>
+                        <button class="button-research-img"><i class="fas fa-search" style="font-size: 20px; color:white"></i></button>
                     
                 </div>
             
@@ -56,21 +60,21 @@
                 
             <h2 id="filtres_titre">Filtres</h2>
             <ul>
-                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/money-bill-wave-solid.svg" alt="picto_money"></span>Economique</li>
+                    <li class="filtres_border"><span class="filtres_img"><i class="fas fa-money-bill-wave" style="font-size: 18px; color:#0065FC"></i></span>Economique</li>
                 
 
-                    <li class="filtres_border"><span class="filtres_img"><img  src="images/logo/child-solid.svg" alt="picto_child"></span>Familial</li>
+                    <li class="filtres_border"><span class="filtres_img"><i class="fas fa-child" style="font-size: 18px; color:#0065FC"></i></span>Familial</li>
                 
-                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/heart-solid.svg" alt="picto_heart"></span>Romantique</li>
+                    <li class="filtres_border"><span class="filtres_img"><i class="fas fa-heart" style="font-size: 18px; color:#0065FC"></i></span>Romantique</li>
 
 
-                    <li class="filtres_border"><span class="filtres_img"><img src="images/logo/dog-solid.svg" alt="picto_dog"></span>Animaux autorisés</li>
+                    <li class="filtres_border"><span class="filtres_img"><i class="fas fa-dog" style="font-size: 18px; color:#0065FC"></i></span>Animaux autorisés</li>
 
             </ul>
         </div>
             <div id="information">
                 <div id="picto_info">
-                    <img  src="images/logo/info-solid.svg" alt="picto_info">
+                    <i class="fas fa-info" style="font-size: 14px; color:#0065FC"></i>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -78,8 +82,7 @@
             
 
         <!--section_hebergement-->
-    <section id="section_1">
-            <h2></h2>
+        <div id="section_1">  
                 <article id="marseille">
                     <h2 id="hebergement">Hébergement à Marseille</h2>
                     <div id="article_marseille">
@@ -94,14 +97,14 @@
                                 <div class="description_img">
                              
                                     <h3>Auberge la Cannebiere</h3>
-                                    <p>Nuit a partir de <span class="price_bold">25€</span> </p>
+                                    <p>Nuit à partir de <span class="price_bold">25€</span> </p>
                                     <div class="star">
 
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid-grey.svg" alt="avis">
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                                 
                                     </div>
                            
@@ -120,11 +123,11 @@
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de <span class="price_bold">52€</span></p>
                                     <div class="star">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
                                     </div>
                                 </div>
                             </div>
@@ -140,11 +143,11 @@
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de <span class="price_bold">76€</span> </p>
                                     <div class="star">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid.svg" alt="avis">
-                                        <img src="images/logo/star-solid-grey.svg" alt="avis">
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                        <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                                     </div>
                                 </div>
                             </div>
@@ -160,11 +163,11 @@
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de <span class="price_bold">46€</span></p>
                             <div class="star">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid-grey.svg" alt="avis">
-                                <img src="images/logo/star-solid-grey.svg" alt="avis">
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                                 
                             </div>
                         </div>
@@ -181,13 +184,11 @@
                             <h3>Auber le panier</h3>
                             <p>Nuit à partir de<span class="price_bold">23€</span></p>
                             <div class="star">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid-grey.svg" alt="avis">
-                                
-                                
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                             </div>
                         </div>
                     </div>
@@ -203,11 +204,11 @@
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de <span class="price_bold">96€</span></p>
                                 <div class="star">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
                                 
                                 </div>
                             </div>
@@ -224,7 +225,9 @@
         <aside>
             <div id="titre_populaire">
                 <h2>Les plus populaires</h2> 
-                <img id="picto_chart" src="images/logo/chart-line-solid.svg" alt="picto_chart"/>
+                <div id="picto_chart">
+                    <i class="fas fa-chart-line" style="font-size: 20px; color:black"></i>
+                </div>
             </div>
             <div id="flex_populaire">
                 <a href="#">
@@ -238,11 +241,11 @@
                                     <p>Nuit à partir de <span class="price_bold">128€</span></p>
                                 </div>
                                 <div class="star">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis">
-                                    <img src="images/logo/star-solid.svg" alt="avis"> 
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                    <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
                                 </div>
                             </div>    
                     </div>
@@ -258,11 +261,11 @@
                                 <p>Nuit à partir de <span class="price_bold">71€</span></p>
                             </div>
                             <div class="star">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid-grey.svg" alt="avis">
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                                    
                             </div>
                         </div>
@@ -279,11 +282,11 @@
                                 <p>Nuit à partir de <span class="price_bold">68€</span></p>
                             </div>
                             <div class="star">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid.svg" alt="avis">
-                                <img src="images/logo/star-solid-grey.svg" alt="avis">
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#0065FC"></i>
+                                <i class="fas fa-star" style="font-size: 12px; color:#DCDCDC"></i>
                                  
                             </div>
                         </div>
@@ -292,7 +295,7 @@
             </div>
 
         </aside>
-    </section>
+    </div>
 
 
         <!-- Section_activités-->
@@ -367,7 +370,7 @@
             <footer>
 
                 <div class="bas-de-page">
-                    <p>Â propos</p>
+                    <p>À propos</p>
                     <ul>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales de ventes</a></li>
