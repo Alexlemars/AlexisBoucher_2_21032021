@@ -913,9 +913,10 @@ footer a:hover{
 }
 
 @media screen and (max-width:390px){
-    .img_populaire{
-        margin-right:15px;
+    .plus_populaire,.img_populaire{
+        width:auto;
     }
+    
     #picto_info{
         width:25px;
         height:20px;
@@ -948,5 +949,17 @@ footer a:hover{
         height:20px;
     }
     
+
+}
+@media screen and (max-width:321px){
+    .img_populaire{
+        width:50%;
+    }
+    .img_aside{
+        width:100px;
+    }
+    .avis_back{
+        font-size: 0.8em;
+    }
 
 }
